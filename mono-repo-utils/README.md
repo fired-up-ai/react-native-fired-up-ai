@@ -19,7 +19,7 @@ cd bats-core
 
 # Run the install script
 sudo ./install.sh /usr/local
-
+```
 # Once installed run tests using
 ```bash
 bats mono-repo-utils/__tests__/test-create-package.bats
