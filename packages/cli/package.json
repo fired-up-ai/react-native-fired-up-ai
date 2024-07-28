@@ -1,0 +1,21 @@
+{
+    "name": "@fired-up-ai/cli",
+    "version": "0.1.0",
+    "main": "index.ts",
+    "license": "MIT",
+    "private": true,
+    "repository": "https://github.com/fired-up-ai/react-native-fired-up-ai.git",
+    "author": "sukrut29 <sukrutssathaye@gmail.com>",
+    "scripts": {
+        "test": "jest"
+    },
+    "peerDependencies": {
+        "//": "Use peerDependencies if already present in root package.json"
+    },
+    "dependencies": {
+        "//": "Project specific dependencies"
+    },
+    "devDependencies": {
+        "//": "Project specific test dependencies"
+    }
+}
