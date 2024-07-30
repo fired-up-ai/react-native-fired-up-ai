@@ -6,7 +6,7 @@ import {
   MD3DarkTheme,
   MD3LightTheme
 } from 'react-native-paper';
-import {store} from '@fired-up-ai/store';
+import {store} from '@fired-up-ai/common-store';
 
 const withProviders = (Component: any) => (props: any) => (
   <ReduxProvider store={store}>
