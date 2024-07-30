@@ -1,0 +1,22 @@
+{
+  "name": "@fired-up-ai/utils",
+  "version": "0.1.0",
+  "description": "Common Utilities like contexts and hooks for react-native projects",
+  "main": "index.ts",
+  "repository": "github.com/fired-up-ai/rn-fire-ai.git",
+  "author": "Sukrut S. Sathaye <sukrutssathaye@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "@babel/preset-react": "^7.14.5",
+    "@babel/preset-typescript": "^7.15.0",
+    "@types/redux-thunk": "2.1.30",
+    "babel-jest": "^29.7.0",
+    "ts-jest": "^29.2.3"
+  }
+}
