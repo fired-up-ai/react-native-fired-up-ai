@@ -1,0 +1,33 @@
+
+services:
+  create-package:
+    image: ubuntu:latest
+    volumes:
+      - project_data:/app
+      - package_data:/app/output:rw
+    working_dir: /app
+    entrypoint: ["bash", "/app/create-package.sh"]
+    environment:
+      - NODE_ENV=development
+    command: ["bash", "-c", "while true; do sleep 1000; done"]
+
+  bats-tests:
+    extends:
+      file: ./mono-repo-utils/docker-compose.yml
+      service: bats-tests
+
+volumes:
+  project_data:
+    driver: local
+    driver_opts:
+      type: none
+      device: //wsl$/Ubuntu-22.04/home/sukrut/mono-repo/react-native-fired-up-ai/mono-repo-utils
+      o: bind
+  package_data:
+    driver: local
+    driver_opts:
+      type: none
+      device: //wsl$/Ubuntu-22.04/home/sukrut/mono-repo/react-native-fired-up-ai/packages
+      o: bind
+
+ 
