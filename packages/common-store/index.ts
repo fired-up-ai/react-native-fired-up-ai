@@ -1,5 +1,5 @@
 import { store, RootState, AppDispatch } from './src/store';
-import { setUser, clearUser } from './src/features/userSlice';
+import { setUser, clearUser, UserState } from './src/features/userSlice';
 
 export {
     store, 
@@ -9,6 +9,7 @@ export {
 
 export type {
     RootState,
-    AppDispatch
+    AppDispatch,
+    UserState
 };
 
