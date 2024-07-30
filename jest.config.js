@@ -25,5 +25,4 @@ module.exports = {
       '!src/**/*.d.ts',
       '!src/**/index.{js,ts}'
     ]
-  };
-  
+};
