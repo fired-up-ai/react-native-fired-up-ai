@@ -9,3 +9,4 @@ test-package/
 __tests__/lib/*
 *.test.tsx.snap
 *:Zone.Identifier
+yarn.lock
