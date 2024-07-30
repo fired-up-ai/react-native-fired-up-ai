@@ -10,12 +10,16 @@
         "test": "jest"
     },
     "peerDependencies": {
-        "//": "Use peerDependencies if already present in root package.json"
+        "react": "^18.2.0",
+        "react-native": "^0.74.3",
+        "react-native-paper": "5.11.5"
     },
     "dependencies": {
-        "//": "Project specific dependencies"
+        "@expo/vector-icons": "^14.0.2",
+        "@fired-up-ai/common-store": "*",
+        "@fired-up-ai/web-firebase": "*"
     },
     "devDependencies": {
-        "//": "Project specific test dependencies"
+        
     }
 }
