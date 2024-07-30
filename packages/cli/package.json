@@ -10,12 +10,17 @@
         "test": "jest"
     },
     "peerDependencies": {
-        "//": "Use peerDependencies if already present in root package.json"
     },
     "dependencies": {
-        "//": "Project specific dependencies"
+
+        "@types/inquirer": "^9.0.7",
+        "commander": "^12.1.0",
+        "find-up": "^7.0.0",
+        "inquirer": "^10.1.3"
     },
     "devDependencies": {
-        "//": "Project specific test dependencies"
+        "@types/fs-extra": "^11.0.4",
+        "@types/inquirer": "^9.0.7",
+        "fs-extra": "^11.2.0"
     }
 }
