@@ -20,6 +20,10 @@
         "@fired-up-ai/web-firebase": "*"
     },
     "devDependencies": {
-        
+        "@eslint/js": "^9.8.0",
+        "eslint": "9.x",
+        "eslint-plugin-react": "^7.35.0",
+        "globals": "^15.8.0",
+        "typescript-eslint": "^7.18.0"
     }
 }
