@@ -10,3 +10,5 @@ __tests__/lib/*
 *.test.tsx.snap
 *:Zone.Identifier
 yarn.lock
+.yarnrc
+.yarn/
