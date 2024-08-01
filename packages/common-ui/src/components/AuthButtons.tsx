@@ -7,7 +7,11 @@ interface AuthButtonsProps {
   onSignUpPress: () => void;
 }
 
-const AuthButtons: React.FC<AuthButtonsProps> = ({ onSignInPress, onSignUpPress }) => {
+const AuthButtons: React.FC<AuthButtonsProps> = (
+  { 
+    onSignInPress, 
+    onSignUpPress 
+  }) => {
   return (
     <View style={styles.container}>
       <Button title="Sign In" onPress={onSignInPress} />
