@@ -12,3 +12,4 @@ __tests__/lib/*
 yarn.lock
 .yarnrc
 .yarn/
+firebase-adminsdk.json
