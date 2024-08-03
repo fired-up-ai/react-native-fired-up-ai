@@ -9,3 +9,4 @@ typings/
 node_modules/
 *.local
 ui-debug.log
+package-lock.json
