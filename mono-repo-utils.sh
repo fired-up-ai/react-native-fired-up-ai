@@ -7,7 +7,7 @@ create_package() {
     ./mono-repo-utils/create-package.sh
 }
 
-do_initial_setup() {
+perform_initial_setup() {
     ./mono-repo-utils/setup.sh
 }
 
@@ -16,7 +16,7 @@ do_initial_setup() {
 # Main menu
 echo "Select an option:"
 echo "1. Create a new package"
-echo "2. Do initial setup"
+echo "2. Perform initial setup"
 # Add more options as needed
 
 read -p "Enter your choice [1]: " choice
@@ -28,7 +28,7 @@ case $choice in
         ;;
     # Add more cases for other options
     2)
-        do_initial_setup
+        perform_initial_setup
         ;;
     *)
         echo "Invalid option"
