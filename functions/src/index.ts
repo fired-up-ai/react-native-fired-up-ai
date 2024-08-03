@@ -1,6 +1,6 @@
 import * as functions from 'firebase-functions';
 import * as admin from 'firebase-admin';
-import * as cors from 'cors';
+import cors from 'cors';
 
 admin.initializeApp();
 
@@ -21,7 +21,7 @@ const corsOptionsDelegate = (req: any, callback: any) => {
 
 cors(corsOptionsDelegate);
 
-exports.setUserRole = functions.https.onCall(async (data: any, context: any) => {
+export const setUserRole = functions.https.onCall(async (data: any, context: any) => {
     try {
         if (!context.auth) {
             throw new functions.https.HttpsError(
@@ -45,7 +45,7 @@ exports.setUserRole = functions.https.onCall(async (data: any, context: any) => 
 
             await admin.auth().setCustomUserClaims(data.uid, { ...currentClaims, roles: roles });
         }
-        return { message: `Success! ${data.role} role has been added to ${user.displayName}` };
+        return { message: `Success! ${data.role} role has been added to ${data.uid}` };
         
     } catch (error: any) {
         throw new functions.https.HttpsError('unknown', error.message, error);
@@ -53,7 +53,7 @@ exports.setUserRole = functions.https.onCall(async (data: any, context: any) => 
 });
 
 
-exports.removeUserRole = functions.https.onCall(async (data: any, context: any) => {
+export const removeUserRole = functions.https.onCall(async (data: any, context: any) => {
     try {
       if (!context.auth) {
         throw new Error('Not authenticated');
